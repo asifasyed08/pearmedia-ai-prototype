@@ -48,7 +48,7 @@ function WorkflowImage() {
 
   return (
     <div>
-      <h2>Style Lab 🎨</h2>
+      <h2>🧠 Style Lab</h2>
 
       {/* Upload */}
       <input type="file" onChange={handleUpload} />
@@ -69,7 +69,7 @@ function WorkflowImage() {
       )}
 
       {/* Loading */}
-      {loading && <p>Loading...</p>}
+      {loading && <p>⏳ Processing... please wait</p>}
 
       {/* Error */}
       {error && <p>{error}</p>}

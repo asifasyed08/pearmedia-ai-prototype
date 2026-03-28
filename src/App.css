@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5f7ff;
+}
+
+h1 {
+  color: #4f46e5;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #6366f1;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4f46e5;
+}
+
+textarea {
+  padding: 10px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+img {
+  margin-top: 15px;
+  border-radius: 10px;
+}

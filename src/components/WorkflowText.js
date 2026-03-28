@@ -38,7 +38,7 @@ function WorkflowText() {
 
   return (
     <div>
-      <h2>Creative Studio ✨</h2>
+      <h2>🎨 Creative Studio</h2>
 
       <textarea
         placeholder="Enter your idea..."
@@ -48,7 +48,7 @@ function WorkflowText() {
 
       <br /><br />
 
-      <button onClick={handleEnhance}>Enhance Prompt</button>
+      <button onClick={handleEnhance} disabled={loading}>Enhanced Prompt</button>
 
       {enhancedPrompt && (
         <>
@@ -59,11 +59,13 @@ function WorkflowText() {
 
           <br /><br />
 
-          <button onClick={handleGenerate}>Generate Image</button>
+          <button onClick={handleGenerate} disabled={loading}>
+            Generate Image
+          </button>
         </>
       )}
 
-      {loading && <p>Loading...</p>}
+      {loading && <p>⏳ Processing... please wait</p>}
       {error && <p>{error}</p>}
 
       {imageUrl && <img src={imageUrl} alt="Generated" width="300" />}

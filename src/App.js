@@ -1,12 +1,22 @@
 import { useState } from "react";
 import WorkflowText from "./components/WorkflowText";
 import WorkflowImage from "./components/WorkflowImage";
+import "./App.css";
 
 function App() {
   const [tab, setTab] = useState("text");
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
+    <div 
+      style={{
+        background: "white",
+        padding: "20px",
+        borderRadius: "12px",
+        boxShadow: "0px 4px 10px rgba(0,0,0,0.1)",
+        display: "inline-block",
+        marginTop: "50px"
+      }}
+    >
       <h1>Pear Media AI Lab 🚀</h1>
 
       <div style={{ marginBottom: "20px" }}>
